@@ -1,6 +1,5 @@
 export async function fetchBooksByKeyword(keyword, categoryId = '', start = 1) {
-  const apiUrl = `/api/aladin?ttbkey=ttbsongmh1352200001&Query=${encodeURIComponent(
-    keyword
+ 
   )}&QueryType=Keyword&MaxResults=50&start=${start}&SearchTarget=Book${
     categoryId ? `&CategoryId=${categoryId}` : ''
   }&output=xml&Version=20131101`;
